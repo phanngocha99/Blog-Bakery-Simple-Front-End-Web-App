@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "compile-templates-about": "npx handlebars templates/about/ -f ./js/about.templates.js --extension 'hbs' --o",
+    "compile-templates-blogs": "npx handlebars templates/blogs/ -f ./js/blogs.templates.js --extension 'hbs' -k each -k if -k formatDate -k pagination -k unless",
+    "compile-templates-gallery": "npx handlebars templates/gallery/ -f ./js/gallery.templates.js --extension 'hbs' --o",
+    "compile-templates-index": "npx handlebars templates/index/ -f ./js/index.templates.js --extension 'hbs' --o",
+    "compile-templates-search": "npx handlebars templates/search/ -f ./js/search.templates.js --extension 'hbs' --o"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
+}
